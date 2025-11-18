@@ -1,0 +1,39 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "backend server for pgp chat app",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js ",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "chat",
+    "encryption",
+    "rsa",
+    "pgp",
+    "server"
+  ],
+  "type": "module",
+  "author": "Rayan",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.20.0",
+    "node-fetch": "^3.3.2",
+    "node-rsa": "^1.1.1",
+    "nodemon": "^3.1.10",
+    "openpgp": "^6.2.2",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.8.1",
+    "ws": "^8.18.3"
+  }
+}
