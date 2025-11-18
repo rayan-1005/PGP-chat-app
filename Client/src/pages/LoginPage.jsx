@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { login } from '../utils/api'
+import { login } from '../utils/api.js'
+import { Link } from "react-router-dom";
+
 import './AuthPages.css'
 
 function LoginPage({ onLoginSuccess }) {
@@ -53,7 +55,7 @@ function LoginPage({ onLoginSuccess }) {
         </form>
         {error && <p className="error">{error}</p>}
         <p className="switch-auth">
-          Don't have an account? <a href="/register">Register</a>
+          Don't have an account? <Link to="/register">Register</Link>
         </p>
       </div>
     </div>
